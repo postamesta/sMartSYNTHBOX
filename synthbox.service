@@ -1,0 +1,22 @@
+[Unit]
+Description=SynthBox Fluidsynth Player
+After=multi-user.target network.target sound.target dev-gpiomem.device
+Wants=dev-gpiomem.device
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+SupplementaryGroups=gpio,i2c,spi,audio
+WorkingDirectory=/home/pi/synthbox
+ExecStartPre=/bin/bash -c 'sleep 5 && echo GPIO ready'
+ExecStart=/usr/bin/python3 /home/pi/synthbox/main.py
+Restart=always
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+Environment=GPIOZERO_PIN_FACTORY=rpigpio
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+
+[Install]
+WantedBy=multi-user.target
