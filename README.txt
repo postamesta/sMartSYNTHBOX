@@ -5,8 +5,13 @@
 by Emanuele Martorelli
 Nov 2025 - Plug & Play Edition
 
+sMart SynthBox is a plug-and-play FluidSynth-based sampler designed for Raspberry Pi 4 with Pimoroni Audio Pirate Heaphone.  
+It allows you to browse and load SoundFonts directly from a small display using simple buttons,  
+and play them via any USB MIDI keyboard.
 
 Quick start:
+Format a Micro SD card and install Raspbian OS lite
+
 1) Copy the 'synthbox' folder to /home/pi/.
 2) On the Pi, run:
    cd /home/pi/synthbox
@@ -45,13 +50,6 @@ Plug & Play SoundFont Synthesizer for Raspberry Pi 4 and Pimoroni Pirate Audio H
 **Authors:**  
 - Emanuele Martorelli (concept, hardware integration)  
 - ChatGPT (OpenAI) * system orchestration, code development  
-
----
-
-## About
-SynthBox sMart is a plug-and-play FluidSynth-based sampler designed for Raspberry Pi.  
-It allows you to browse and load SoundFonts directly from a small display using simple buttons,  
-and play them via any USB MIDI keyboard.
 
 ---
 
