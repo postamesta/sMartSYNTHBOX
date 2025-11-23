@@ -1,0 +1,15 @@
+[Unit]
+Description=SynthBox Fluidsynth Player
+After=network.target sound.target graphical.target
+
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/synthbox/main.py
+WorkingDirectory=/home/pi/synthbox
+StandardOutput=journal
+StandardError=journal
+Restart=on-failure
+User=pi
+
+[Install]
+WantedBy=multi-user.target
