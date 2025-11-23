@@ -7,13 +7,13 @@ set -euo pipefail
 
 echo "=== Installing sMart SynthBox (NO AUTO-SOUNDFONT) ==="
 
-# Assicuriamoci di lavorare nella cartella giusta
+# Check the right path
 cd /home/pi/synthbox || { echo "/home/pi/synthbox not found. Put project here and retry."; exit 1; }
 
 echo "Fixing ownership to pi:pi..."
 sudo chown -R pi:pi /home/pi/synthbox || true
 
-# Rinomina eventuali cartelle con CRLF residuo create su Windows
+# Rename CRLF folder if exist
 mv "fonts"$'\r' fonts 2>/dev/null || true
 mv "sounds"$'\r' sounds 2>/dev/null || true
 
