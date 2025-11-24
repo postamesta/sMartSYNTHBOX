@@ -6,8 +6,8 @@ for your Raspberry PI4 to turn your controller into a synth
 <img width="1200" height="675" alt="Image" src="https://github.com/user-attachments/assets/1cb0d5e7-c326-451d-939a-e064754c5c81" />
 
 Version: 1.0 - First release can play only individual .sfz or .sf2
-files or the FIRST PRESET of every multiple soundont. In the next
-update it will be possivle to navigate through presets.
+files or the FIRST PRESET of every multiple soundfont. In the next
+update it will be possible to navigate through presets.
 
 Description:
 ------------
