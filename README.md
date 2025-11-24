@@ -22,16 +22,16 @@ Requirements:
 • Internet connection (for first installation only)
 
 BUTTONS
-A = previous soundfont
-B = next soundfont
-Y = load soundfont
+A = previous soundfont\n
+B = next soundfont\n
+Y = load soundfont\n
 X (hold 6 seconds) = shutdown
 
 Fast install:
 
 1. Flash Raspberry Pi OS Lite onto an SD card.
 2. Insert the card in your Raspberry PI 4 and boot.
-3. Open a terminal emulator from pc (i use Putty),
+3. Open a terminal emulator from computer,
 connect with Host name/ip address:
 192.168.1.117
 port: 22
