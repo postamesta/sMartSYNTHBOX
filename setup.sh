@@ -6,6 +6,14 @@ set -euo pipefail
 
 echo "=== sMart SynthBox by Emanuele Martorelli — AUTO SETUP ==="
 
+echo "Checking if git is installed..."
+if ! command -v git >/dev/null 2>&1; then
+    echo "No Git found, installing..."
+    sudo apt update && sudo apt install -y git
+else
+    echo "Git is already installed"
+fi
+
 TARGET_DIR="/home/pi/synthbox"
 REPO_URL="https://github.com/postamesta/smartsynthbox"
 
