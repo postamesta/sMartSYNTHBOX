@@ -37,7 +37,19 @@ FEATURES
 - FluidSynth auto-launch
 - Shutdown button
 
-Installation:
+Installation (auto)
+-------------
+1. Flash Raspberry Pi OS Lite onto an SD card.
+2. Insert the card in your Raspberry PI 4 and boot.
+3. Open a terminal emulator from pc (i use PuTTy),
+connect with Host name/ip address: 
+   192.168.1.117
+   port: 22
+4. Run command from prompt:
+   curl -sSL https://raw.githubusercontent.com/postamesta/smartsynthbox/main/setup.sh | bash
+
+
+Installation (manually - the hard way)
 -------------
 1. Flash Raspberry Pi OS Lite onto an SD card.
 2. Boot and connect to your network.
@@ -80,4 +92,6 @@ by Peter Hanappe and others
 
 sMart SYNTHBOX by Emanuele Martorelli is tested on a
 Raspberry Pi4 with Pimoroni Audio Pirate Headphones.
-Enjoy your standalone SynthBox!
+Enjoy your standalone midi Synth!
+made with stubborn recklessness
+
